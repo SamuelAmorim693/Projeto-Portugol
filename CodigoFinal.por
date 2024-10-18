@@ -35,13 +35,25 @@ programa {
 
       //dados de seleção 
       limpa()
-      escreva("\n\n⌬ Escolha um modo de jogo de sua preferencia utilizando os números \ncorrespondentes de cada modo:\n\n1- Combate\n2- Nocaute\n3- Roubo\n4- Duelo\n")
-      leia(modoJogo)
+      escreva("\n\n⌬ Escolha um modo de jogo de sua preferencia utilizando os números \ncorrespondentes de cada modo:\n\n1- Combate\n2- Nocaute\n")
+        leia(modoJogo)
+          enquanto(modoJogo < 1 ou modoJogo > 2 ){
+            escreva("\n\n⌬ O número informado não está entre 1 e 2, tente novamente utilizando os números \ncorrespondentes de cada modo:\n\n1- Combate\n2- Nocaute\n")
+             leia(modoJogo)
+          }
       escreva("\n\n\n⌬ "+nome+", você prefere personagens de longa ou curta distancia ?\n(Utilize os números correspondentes da sua prefencia)\n\n1- Longa Distancia\n2- Curta Distancia\n:")
-      leia(distancia)
+        leia(distancia)
+          enquanto(distancia < 1 ou distancia > 2 ){
+            escreva("\n\n⌬ O número informado não está entre 1 e 2, tente novamente utilizando os números \ncorrespondentes de cada modo:\n\n1- Combate\n2- Nocaute\n")
+             leia(distancia)
+          }
+          
       escreva("\n\n\n⌬ Você prefere personagens com mais vida ou mais dano?\n(Utilize os números correspondentes da sua prefencia)\n\n1- + Vida\n2- + Dano\n:")
-      leia(estilo)limpa()
-
+        leia(estilo)limpa()
+          enquanto(estilo < 1 ou estilo > 2 ){
+            escreva("\n\n⌬ O número informado não está entre 1 e 2, tente novamente utilizando os números \ncorrespondentes de cada modo:\n\n1- Combate\n2- Nocaute\n")
+             leia(estilo)
+          }
       // Modo combate 
       escolha(modoJogo){
          caso 1:
@@ -94,7 +106,7 @@ programa {
                 escolha(estilo){
                   caso 1: 
                    escreva("\n")
-    escreva("         【 Edgar 】                                                 【 Ash 】                                                   【 Spike 】\n\n\n\n")
+    escreva("         【 Edgar 】                                                 【 Ash 】                                                   【 Darryl 】\n\n\n\n")
     escreva(" ☉ CLASSIFICAÇÂO:                                                  ☉ CLASSIFICAÇÂO:                                              ☉ CLASSIFICAÇÂO:\n\n")
     escreva("  Lutador - Épico                                                   Tanque - Lendário                                             Destruidor - Épico\n\n\n\n")
     escreva(" ❖ ACESSORIOS                                                      ❖ ACESSORIOS                                                  ❖ ACESSORIOS\n\n")
@@ -111,7 +123,22 @@ programa {
     escreva("Essas são algumas opções que achamos que você vai se divertir muito jogando. Agora faça sua escolha e vá em busca dos seus trofeus!!!")
                   pare 
                    caso 2:
-                    escreva("1 2 2")
+                    escreva("\n")
+    escreva("         【 Edgar 】                                                 【 Kenji 】                                                   【 kit  】\n\n\n\n")
+    escreva(" ☉ CLASSIFICAÇÂO:                                                  ☉ CLASSIFICAÇÂO:                                              ☉ CLASSIFICAÇÂO:\n\n")
+    escreva("  Lutador - Épico                                                   Algoz - Lendário                                             Suporte - Lemdário\n\n\n\n")
+    escreva(" ❖ ACESSORIOS                                                      ❖ ACESSORIOS                                                  ❖ ACESSORIOS\n\n")
+    escreva(" - Refúgio                                                          - Sushi Curatio                                                - Caixa de Papelão\n")
+    escreva(" - Dano Extra                                                       - Dano Extra                                                   - Dano Extra\n")
+    escreva(" - Punhos Emplacáveis                                               - Defesa Culinária                                             - Fome de Poder\n")
+    escreva(" - Recarga da Super                                                 - Shild Extra                                                  - Carga de Acessório\n\n\n")
+    escreva(" ☐ HIstória:                                                        ☐ HIstória:                                                   ☐ HIstória:\n\n")
+    escreva(" Edgar acha que niguém o entende, principalmente                    Samurai e peixe                                                Gato maneiro.\n")
+    escreva(" sua mãe, que diz que tudo não passa de uma fase.                            \n ")
+    escreva(" Só sabe como o seu abismo interior é infinito..                                   \n")
+    escreva(".                                                                                                    \n ")
+    escreva("                                                                                                                          \n\n\n")
+    escreva("Essas são algumas opções que achamos que você vai se divertir muito jogando. Agora faça sua escolha e vá em busca dos seus trofeus!!!")
           }        
         }
       }
@@ -122,8 +149,23 @@ programa {
               caso 1: 
                 escolha(estilo){
                   caso 1: 
-                   escreva("2 1 1")
-                  pare 
+                    escreva("\n")
+    escreva("         【 Pearl 】                                                 【 8-Bit 】                                                   【 Hank  】\n\n\n\n")
+    escreva(" ☉ CLASSIFICAÇÂO:                                                  ☉ CLASSIFICAÇÂO:                                              ☉ CLASSIFICAÇÂO:\n\n")
+    escreva("  Destruidor - Épico                                                Destruidor - Super raro                                        Suporte - Lemdário\n\n\n\n")
+    escreva(" ❖ ACESSORIOS                                                      ❖ ACESSORIOS                                                  ❖ ACESSORIOS\n\n")
+    escreva(" - Chamuscado                                                       - Ponto Extra                                                  - Balão de Água\n")
+    escreva(" - Dano Extra                                                       - Dano Extra                                                   - Dano Extra\n")
+    escreva(" - Rentenção de Calor                                               - Amplia Dano Ampliado                                         - Vai Explodir\n")
+    escreva(" - Recarga da Super                                                 - Velocidade de Recarga                                        - Velocidade\n\n\n")
+    escreva(" ☐ HIstória:                                                        ☐ HIstória:                                                   ☐ HIstória:\n\n")
+    escreva(" Surpreendentemente, Pearl conseguiu cair nas                       Fliperama mutante...                                            Hank é um exercito de um \n")
+    escreva(" graças de Belle e Sam. Feito por pam e                                                                                             camarão só cuja missão é\n ")
+    escreva("perdido por Jessie.                                                                                                                libertar as criaturas marinhas\n")
+    escreva(".                                                                                                                                   do horror das cozinhas.\n ")
+    escreva("                                                                                                                          \n\n\n")
+    escreva("Essas são algumas opções que achamos que você vai se divertir muito jogando. Agora faça sua escolha e vá em busca dos seus trofeus!!!")
+                    pare 
                    caso 2:
                     escreva("\n")
     escreva("         【 Piper 】                                                 【 Bea 】                                                   【 Spike 】\n\n\n\n")
@@ -141,90 +183,52 @@ programa {
     escreva(" se não quiser acabar no forno.                                                                                                      \n ")
     escreva("                                                                                                                          \n\n\n")
     escreva("Essas são algumas opções que achamos que você vai se divertir muito jogando. Agora faça sua escolha e vá em busca dos seus trofeus!!!")
-          }        
-        }
-      }
-      escolha(modoJogo){
+    }
+}
+          escolha(modoJogo){
          caso 2:
             escolha(distancia){
               caso 2: 
                 escolha(estilo){
                   caso 1: 
-                   escreva("2 2 1")
-                  pare 
-                   caso 2:
-                    escreva("2 2 2")
-          }        
-        }
-      }
-      //Roubo
-      escolha(modoJogo){
-         caso 3:
-            escolha(distancia){
-              caso 1: 
-                escolha(estilo){
-                  caso 1: 
-                   escreva("3 1 1")
-                  pare 
-                   caso 2:
-                    escreva("3 1 2")
-          }        
-        }
-      }
-      escolha(modoJogo){
-         caso 3:
-            escolha(distancia){
-              caso 2: 
-                escolha(estilo){
-                  caso 1: 
-                   escreva("3 2 1")
-                  pare 
-                   caso 2:
-                    escreva("3 2 2")
-          }        
-        }
-      }
-      //Duelo
-      escolha(modoJogo){
-         caso 4:
-            escolha(distancia){
-              caso 1: 
-                escolha(estilo){
-                  caso 1: 
-                   escreva("4 1 1")
+                   escreva("\n")
+    escreva("         【 Piper 】                                                 【 Bea 】                                                   【 Spike 】\n\n\n\n")
+    escreva(" ☉ CLASSIFICAÇÂO:                                                  ☉ CLASSIFICAÇÂO:                                              ☉ CLASSIFICAÇÂO:\n\n")
+    escreva("  Tiro preciso - Épico                                              Tiro preciso - Épico                                          Destruidor - Épico\n\n\n\n")
+    escreva(" ❖ ACESSORIOS                                                      ❖ ACESSORIOS                                                  ❖ ACESSORIOS\n\n")
+    escreva(" - Gatilho preciso                                                  - Comeia Colérica                                              - Bomba de Espetos\n")
+    escreva(" - Dano Extra                                                       - Dano extra                                                   - Dano Extra\n")
+    escreva(" - Emboscada                                                        - Recarga Intantânea                                                        - Bola Curva\n")
+    escreva(" - Visão                                                            - Visão                                                        - Espinhos Grudentos\n\n\n")
+    escreva(" ☐ HIstória:                                                        ☐ HIstória:                                                   ☐ HIstória:\n\n")
+    escreva(" O maior sonho da Piper é ser confeiteira                           Bea passa o dia inteiro observando os                          Muita gente acha que o Spike\n")
+    escreva(" para fazer tortas, biscoitos e vários                              insetos e imaginando o que eles diriam                         é o bichinho de estimação do ")
+    escreva(" doces. Só não pergunte sobre o seu passado                         caso pudesse conversar.                                        Colt.\n")
+    escreva(" se não quiser acabar no forno.                                                                                                      \n ")
+    escreva("                                                                                                                          \n\n\n")
+    escreva("Essas são algumas opções que achamos que você vai se divertir muito jogando. Agora faça sua escolha e vá em busca dos seus trofeus!!!")
                   pare 
                    caso 2:
                     escreva("\n")
-    escreva("         【 Dynamike 】                                              【 Bea 】                                                   【 Spike 】\n\n\n\n")
+    escreva("         【 Edgar 】                                                 【 Ash 】                                                   【 Darryl 】\n\n\n\n")
     escreva(" ☉ CLASSIFICAÇÂO:                                                  ☉ CLASSIFICAÇÂO:                                              ☉ CLASSIFICAÇÂO:\n\n")
-    escreva("  Detonador - Super-raro                                            Tiro preciso - Épico                                          Destruidor - Épico\n\n\n\n")
+    escreva("  Lutador - Épico                                                   Tanque - Lendário                                             Destruidor - Épico\n\n\n\n")
     escreva(" ❖ ACESSORIOS                                                      ❖ ACESSORIOS                                                  ❖ ACESSORIOS\n\n")
-    escreva(" - Pólvora Atordoante                                               - Comeia Colérica                                              - Bomba de Espetos\n")
-    escreva(" - Dano Extra                                                       - Dano extra                                                   - Dano Extra\n")
-    escreva(" - Demolição                                                        - Recarga Intantânea                                                        - Bola Curva\n")
-    escreva(" - Carga de Acessório                                               - Visão                                                        - Espinhos Grudentos\n\n\n")
+    escreva(" - Refúgio                                                          - Banana Podre                                                 - Barril de Piche\n")
+    escreva(" - Dano Extra                                                       - Dano extra                                                   - Escudo\n")
+    escreva(" - Punhos Emplacáveis                                               - Carga de Fúria                                               - Tambor de Ferro\n")
+    escreva(" - Recarga da Super                                                 - Recarga da Super                                             - Dano Extra\n\n\n")
     escreva(" ☐ HIstória:                                                        ☐ HIstória:                                                   ☐ HIstória:\n\n")
-    escreva(" Dynamike é um garimpeiro aposentado que,                           Bea passa o dia inteiro observando os                          Muita gente acha que o Spike\n")
-    escreva(" Depois de vários anos usando dinamites, ficou                      insetos e imaginando o que eles diriam                         é o bichinho de estimação do ")
-    escreva(" obcecado com exploções.                                            caso pudesse conversar.                                        Colt.\n")
-    escreva("                                                                                                       \n ")
+    escreva(" Edgar acha que niguém o entende, principalmente                    Ash tem o trabalho ingrato de limpar                           Darryl virou capitão para \n")
+    escreva(" sua mãe, que diz que tudo não passa de uma fase.                   o Starr Park. Para se proteger de cacos de vidros              fugir do trabalho pesado,\n ")
+    escreva(" Só sabe como o seu abismo interior é infinito..                    e de ratos, ele usa uma lixeira como armadura.                mas agora é obrigado a \n")
+    escreva(".                                                                   É claro que ele fica pistola!                                  defender o navio.     \n ")
     escreva("                                                                                                                          \n\n\n")
     escreva("Essas são algumas opções que achamos que você vai se divertir muito jogando. Agora faça sua escolha e vá em busca dos seus trofeus!!!")
           }        
         }
       }
-      escolha(modoJogo){
-         caso 4:
-            escolha(distancia){
-              caso 2: 
-                escolha(estilo){
-                  caso 1: 
-                   escreva("4 2 1")
-                  pare 
-                   caso 2:
-                    escreva("4 2 2")
+ 
           }        
         }
       }
-  } 
-}
